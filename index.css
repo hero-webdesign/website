@@ -57,6 +57,7 @@ body {
 .text-box h2{
     font-size: xx-large;
     text-align: center;
+    color: white;
 }
 
 .text {
@@ -72,6 +73,7 @@ body {
     font-size: large;
     max-width: 50ch;
     text-align: center;
+    color: white;
 }
 
 .line {
