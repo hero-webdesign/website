@@ -2,11 +2,12 @@ body {
     margin: 0;
 }
 
-.bg-image {
+.landing-page {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-image: url("graphic_design_background.png");
 }
 
 .landing-page-text-box {
@@ -29,51 +30,48 @@ body {
     margin: 0;
 }
 
-.page-column {
-    display: flex;
-    flex-direction: column;
+.divider {
+    width: 100%;
+    height: 5%;
+    background-color: #333;
 }
 
-.page-row {
+.content-container {
     width: 100%;
-    padding: 0;
-    margin: 0;
+    min-height: 50%;
     display: flex;
     flex-direction: row;
-    min-height: 385px;
 }
 
-.text-box {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    min-height: 385px;
+.content-text-box {
+    min-height: 100%;
     width: 50%;
+    background-color: #333;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.text-box h2{
-    font-size: xx-large;
+.content-text-box p {
+    font-size: 30px;
+    max-width: 50ch;
+    text-align: center;
+    color: white;
+}
+
+.content-text-box h2{
+    font-size: 40px;
     text-align: center;
     color: white;
 }
 
 .text {
     margin: 20px;
-    width: 100%;
+    width: calc (100% - 20px);
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-.text-box p {
-    font-size: large;
-    max-width: 50ch;
-    text-align: center;
-    color: white;
 }
 
 .line {
@@ -83,11 +81,52 @@ body {
     margin-left: 12.5%;
 }
 
-.image-box {
-    margin: 0;
-    padding: 0;
+.content-image {
+    min-height: 100%;
     width: 50%;
+    background-color: #333;
+    background-image: url(graphic_design_background.png);
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
+    background-position: center center;
+}
+
+@media only screen and (max-width: 600px) {
+    .landing-page-text-box h1 {
+        font-size: 40px;
+    } 
+
+    .landing-page-text-box p {
+        font-size: 20px;
+    }
+
+    .content-container {
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .content-text-box {
+        min-height: 50%;
+        width: 100%;
+        order: 1;
+    }
+
+    .content-image {
+        min-height: 50%;
+        width: 100%;
+        order: 2;
+    }
+
+    .content-text-box p {
+        font-size: 20px;
+    }
+
+    .content-text-box h2 {
+        font-size: 30px;
+    }
+
+    .divider {
+        height: 0;
+        width: 0;
+    }
 }
