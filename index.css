@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    background-color: #333;
+    overflow-x: hidden;
 }
 
 .landing-page {
@@ -54,15 +56,17 @@ body {
 
 .content-text-box p {
     font-size: 30px;
-    max-width: 50ch;
+    max-width: 45ch;
     text-align: center;
-    color: white;
+    color: #f2f2f2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .content-text-box h2{
     font-size: 40px;
     text-align: center;
-    color: white;
+    color: #f2f2f2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .text {
@@ -89,6 +93,40 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+.content-image.image-right {
+    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(100%);  /* IE 9 */
+        transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.content-image.image-left {
+    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+    -ms-transform: translateX(-100%);  /* IE 9 */
+        transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.content-image.image-right.loaded  {
+    -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(0);  /* IE 9 */
+            transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.content-image.image-left.loaded  {
+    -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(0);  /* IE 9 */
+            transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.content-image.image-left.loaded  {
+    -webkit-transition: all 1.4s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+            transition: all 1.4s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.content-image.image-right.loaded {
+    -webkit-transition: all 1.4s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+            transition: all 1.4s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 
 @media only screen and (max-width: 600px) {
