@@ -1,6 +1,8 @@
 <html lang="nl">
 <link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="contact.css">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hero Webdesign - Contact</title>
     <link rel="icon" type="image/png" sizes="16x16" href="Favicon/logo.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Favicon/logo.png">
@@ -13,5 +15,27 @@
     <img src="Favicon/logoNoTextTrans.png" alt="">
     HERO WEBDESIGN
 </a>
-  </div>
+</nav>
+  <body>
+    <div class="container">
+        <form action="https://formspree.io/f/mdopvbaz" method="POST">
+      
+          <label for="name">Naam</label>
+          <input type="text" id="name" name="name">
+      
+          <label for="phonenumber">Telefoonnummer</label>
+          <input type="text" id="phonenumber" name="phonenumber">
+      
+          <label for="emailadres">Emailadres</label>
+          <input type="text" id="emailadres" name="emailadres">
+      
+          <label for="subject">Onderwerp</label>
+          <textarea id="subject" name="subject" placeholder="Beschrijf hier kort uw probleem/vraag" style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+      
+  </body>
 </html>
