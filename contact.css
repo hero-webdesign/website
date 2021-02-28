@@ -30,6 +30,7 @@ input[type=text], select, textarea {
   
   body{
     margin:0;
+    background-color: #333;
   }
   .container {
     border-radius: 5px;
