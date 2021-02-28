@@ -181,13 +181,10 @@ body {
 
     .content-container {
         width: 100%;
-        display: flex;
-        flex-direction: column;
     }
 
     .content-text-box-container {
         width: 100%;
-        display: flex;
         flex-direction: column; 
     }
 
