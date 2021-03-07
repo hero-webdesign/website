@@ -1,6 +1,7 @@
 .footer a:hover {
-    background-image: linear-gradient(to right,gold, darkorange, red);   
-    color: transparent;  
+  
+  color: #333; 
+  text-decoration: none;
 }
   .footer a{
       color: white;
@@ -9,14 +10,14 @@
       font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   .footer{
-    border-top: .5em;
-    border-top-color: red;
-    border-top-style: solid;
-      position: relative;
+    background-image: url(graphic_design_background.png);
+    margin-top: 5em;
       min-height: 100px;
+      text-align: center;
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 100%;
   }
   @media only screen and (max-width: 500px) {
     .footer a{
@@ -24,8 +25,6 @@
     } 
   }
   .footer p{
-    position: absolute;
-    bottom: -1rem;
-    right: 1rem;
+    align-self:flex-end;
       color: white;
   }
