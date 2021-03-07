@@ -119,22 +119,6 @@ body {
     background-size: cover;
     display: flex;
     flex-direction: column;
-
-    -webkit-transform: scale(1, 1);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: scale(1, 1);  /* IE 9 */
-        transform: scale(1, 1);  /* Firefox 16+, IE 10+, Opera */
-
-        -webkit-transition: all 0.5s linear;
-            transition: all 0.5s linear;
-}
-
-.content-text-box:hover {
-    -webkit-transform: scale(1.1, 1.1);  /* Chrome, Opera 15+, Safari 3.1+ */
-    -ms-transform: scale(1.1, 1.1);  /* IE 9 */
-        transform: scale(1.1, 1.1);  /* Firefox 16+, IE 10+, Opera */
-
-        -webkit-transition: all 0.5s linear;
-            transition: all 0.5s linear;
 }
 
 .content-text-box p {
@@ -167,6 +151,26 @@ body {
     height: 5px;
     background-color: #333;
     margin-left: 12.5%;
+}
+
+@media only screen and (min-width: 600px) {
+    .content-text-box {
+        -webkit-transform: scale(1, 1);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: scale(1, 1);  /* IE 9 */
+            transform: scale(1, 1);  /* Firefox 16+, IE 10+, Opera */
+    
+            -webkit-transition: all 0.5s linear;
+                transition: all 0.5s linear;
+    }
+    
+    .content-text-box:hover {
+        -webkit-transform: scale(1.1, 1.1);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: scale(1.1, 1.1);  /* IE 9 */
+            transform: scale(1.1, 1.1);  /* Firefox 16+, IE 10+, Opera */
+    
+            -webkit-transition: all 0.5s linear;
+                transition: all 0.5s linear;
+    }
 }
 
 @media only screen and (max-width: 600px) {
