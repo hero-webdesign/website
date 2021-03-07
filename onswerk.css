@@ -2,3 +2,26 @@ body{
     margin:0;
     background-color: #333;
 }
+
+.work-container{
+    margin-top: 3em;
+    margin-bottom: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.work{
+    align-self: center;
+    background-image: url("graphic_design_background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    padding:20px;
+    margin-top: 3em;
+    width: 60%;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
